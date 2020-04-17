@@ -37,6 +37,23 @@ h1 {
   transform: scale(0.9);
 }
 
+#test {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background: red;
+  transition: transform 0.2s;
+}
+
+#test:hover {
+  cursor: pointer;
+}
+
+#test:active {
+  transform: scale(0.95);
+}
+
 h2 {
   font-size: 4em;
 }
