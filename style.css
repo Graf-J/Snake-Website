@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 2vh;
+  text-align: center;
+  text-decoration: underline;
+}
+.container {
+  margin-top: 2vh;
+  padding: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button {
+  height: 300px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 150px;
+  background: rgb(252,69,223);
+  background: linear-gradient(50deg, rgba(252,69,223,1) 19%, rgba(26,138,255,1) 91%);
+  transition: transform 0.5s;
+}
+
+#button:hover {
+  cursor: pointer;
+  transform: rotateZ(180deg);
+}
+
+#button:active {
+  transform: scale(0.9);
+}
+
+h2 {
+  font-size: 4em;
+}
