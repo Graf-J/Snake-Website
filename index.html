@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My First Website</title>
+    <title>Snake</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-
-    <h1>My First Website</h1>
-
     <div class="container">
-      <button id="button"></button>
-      <button id="test"></button>
+      <canvas id="snake" width="608" height="608"></canvas>
     </div>
 
-    <h2 id="count">0</h2>
-
+    <div class="button-container">
+      <div class="buttons">
+        <button id="up" class="knopf"><h1>&#9757;&#127996;</h1></button>
+        <button id="left" class="knopf"><h1>&#128072;&#127996;</h1></button>
+        <button id="down" class="knopf"><h1>&#128071;&#127996;</h1></button>
+        <button id="right" class="knopf"><h1>&#128073;&#127996;</h1></button>
+      </div>
+    </div>
   </body>
   <script src="app.js" charset="utf-8"></script>
 </html>

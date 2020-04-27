@@ -2,58 +2,56 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
   text-align: center;
 }
 
-h1 {
-  margin-top: 2vh;
-  text-align: center;
-  text-decoration: underline;
-}
-.container {
-  margin-top: 2vh;
-  padding: 7%;
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#button {
-  height: 300px;
-  width: 300px;
-  border: 2px solid black;
-  border-radius: 150px;
-  background: rgb(252,69,223);
-  background: linear-gradient(50deg, rgba(252,69,223,1) 19%, rgba(26,138,255,1) 91%);
-  transition: transform 0.5s;
+.buttons {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+  grid-template-areas: ". up ."
+                       "left down right";
+
+  grid-gap: 10px;
 }
 
-#button:hover {
-  cursor: pointer;
-  transform: rotateZ(180deg);
+.knopf {
+  background: orange;
+  border-radius: 50px;
+  border: none;
+  transition: transform 0.15s;
 }
 
-#button:active {
-  transform: scale(0.9);
+.knopf:hover {
+    cursor: pointer;
 }
 
-#test {
-  width: 200px;
-  height: 200px;
-  border: 2px solid black;
-  border-radius: 20px;
-  background: red;
-  transition: transform 0.2s;
-}
-
-#test:hover {
-  cursor: pointer;
-}
-
-#test:active {
+.knopf:active {
   transform: scale(0.95);
 }
 
-h2 {
-  font-size: 4em;
+#up {
+  grid-area: up;
+}
+
+#left {
+  grid-area: left;
+}
+
+#down {
+  grid-area: down;
+}
+
+#right {
+  grid-area: right;
 }
